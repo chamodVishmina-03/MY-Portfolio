@@ -9,3 +9,20 @@ header > section> .circle{
     justify-content: center;
     align-items: center;
 }
+/*icon image*/
+header>section>.circle >.icon{
+    width:30px;
+}
+/*image, icon */
+header > section {
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+/*element*/
+header> nav>a{
+    text-decoration: none;
+    font-family: "Arial Narrow";
+    margin: 0px 10px;
+}
