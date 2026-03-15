@@ -68,7 +68,7 @@ main>section>.main_background{
 }
 main>section> .hii{
     position: absolute;
-    font-size: 50px;
+    font-size: 60px;
     top:5%;
     left:50%;
     color:white;
@@ -76,15 +76,15 @@ main>section> .hii{
 
 main>section> .mian_name{
     position: absolute;
-    font-size: 70px;
+    font-size: 80px;
     top:15%;
     left:50%;
     color:white;
 }
 main>section>.main_1 {
     position: absolute;
-    font-size: 30px;
-    top:33%;
+    font-size: 40px;
+    top:35%;
     left:50%;
     color:#FF0000;
     text-align:center;
@@ -92,11 +92,19 @@ main>section>.main_1 {
 
 main>section>.main_2 {
     position: absolute;
-    font-size: 30px;
-    top:39%;
+    font-size: 40px;
+    top:45%;
     left:50%;
     color:#FF0000;
     text-align:center;
+}
+main>section>.main_p{
+    position: absolute;
+    font-size: 30px;
+    top:60%;
+    left:50%;
+    color:#FF7B7B;
+
 }
 
 
