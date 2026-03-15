@@ -38,7 +38,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #096e9a;
+    background-color: rgba(92,85,167,0.75);
     padding: 10px;
     box-shadow: 0px 10px 10px gray;
 }
