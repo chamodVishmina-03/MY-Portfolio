@@ -28,6 +28,10 @@ header> nav>a{
     color:white;
 }
 
+header> section > h4{
+    font-family: "Arial Narrow";
+    color: white;
+}
 /*navigation Bar*/
 
 header {
