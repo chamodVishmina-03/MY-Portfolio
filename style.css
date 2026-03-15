@@ -25,4 +25,20 @@ header> nav>a{
     text-decoration: none;
     font-family: "Arial Narrow";
     margin: 0px 10px;
+    color:white;
 }
+
+/*navigation Bar*/
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1f4676;
+    padding: 10px;
+    box-shadow: 0px 10px 10px gray;
+}
+
+
+
+
