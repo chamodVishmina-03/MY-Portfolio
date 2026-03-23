@@ -19,12 +19,17 @@ header > section {
     align-items:center;
     gap:10px;
 }
+header {
+    display:flex;
+    width: 100vw;
+}
 
 /*element*/
 header> nav>a{
     text-decoration: none;
     font-family: "Arial Narrow";
-    margin: 0px 10px;
+    justify-content: space-evenly;
+    margin: 0px 20px;
     color:white;
 }
 
@@ -56,15 +61,6 @@ body {
 
 /*================================    Main     ============================================================*/
 
-   /*background-Image*/
-main>section>.main_background{
-    width:100%;
-    height:calc(100vh + 60px);
-    display:block;
-
-    border-radius:30px;
-
-}
 
 #home{
     position: relative;
@@ -73,8 +69,8 @@ main>section>.main_background{
 
 .main-photo {
     position: absolute;
-    top: 20%;
-    left: 10%;
+    top: 25%;
+    left: 8%;
 
     width: 600px;
     height: 600px;
@@ -104,10 +100,15 @@ main>section>.main_background{
     inset: -15px;
 
     border-radius: 50%;
-    background: linear-gradient(45deg, #00f0ff, #a100ff);
+    background: linear-gradient(45deg, #00f0ff, #b626fb);
 
-    filter: blur(30px);
+    filter: blur(20px);
     z-index: 0;
+}
+.main-photo:hover::before {
+   rotate:4060deg;
+   animation-duration: 20000ms;
+
 }
 
 /*!* border ring *!*/
@@ -164,7 +165,7 @@ main>section>.main_p{
     font-size: 30px;
     top:75%;
     left:50%;
-    color: #eefaff;
+    color: #b5abf4;
     font-weight: 500;
 
 }
