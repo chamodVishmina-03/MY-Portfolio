@@ -45,8 +45,8 @@ header {
 
 }
 
-body{
-    background-color: #081C29;
+body {
+    background: radial-gradient(circle at left, #0a2a3a, #081C29 70%);
 }
 
 /*================================    Main     ============================================================*/
@@ -92,17 +92,16 @@ main>section>.main_background{
     z-index: 2;
     position: relative;
 }
-
-/* glow ring */
 .main-photo::before {
     content: "";
     position: absolute;
-    inset: -10px; /* slightly bigger for glow */
+
+    inset: -25px;
 
     border-radius: 50%;
     background: linear-gradient(45deg, #00f0ff, #a100ff);
 
-    filter: blur(50px);
+    filter: blur(60px);
     z-index: 0;
 }
 
