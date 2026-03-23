@@ -45,8 +45,13 @@ header {
 
 }
 
+nav>a:hover{
+    color:blueviolet;
+}
+
+
 body {
-    background: radial-gradient(circle at left, #0a2a3a, #081C29 70%);
+    background: radial-gradient(circle at left, #0a2a3a, #0c5785 70%);
 }
 
 /*================================    Main     ============================================================*/
@@ -71,8 +76,8 @@ main>section>.main_background{
     top: 20%;
     left: 10%;
 
-    width: 500px;
-    height: 500px;
+    width: 600px;
+    height: 600px;
 
     border-radius: 50%;
 
@@ -96,12 +101,12 @@ main>section>.main_background{
     content: "";
     position: absolute;
 
-    inset: -25px;
+    inset: -15px;
 
     border-radius: 50%;
     background: linear-gradient(45deg, #00f0ff, #a100ff);
 
-    filter: blur(60px);
+    filter: blur(30px);
     z-index: 0;
 }
 
@@ -119,8 +124,8 @@ main>section>.main_background{
  /*content hii*/
 main>section> .hii{
     position: absolute;
-    font-size: 60px;
-    top:5%;
+    font-size: 50px;
+    top:25%;
     left:50%;
     color:white;
 }
@@ -128,8 +133,8 @@ main>section> .hii{
      /*content-name*/
 main>section> .mian_name{
     position: absolute;
-    font-size: 80px;
-    top:15%;
+    font-size: 100px;
+    top:32%;
     left:50%;
     color:white;
 }
@@ -138,7 +143,7 @@ main>section> .mian_name{
 main>section>.main_1 {
     position: absolute;
     font-size: 40px;
-    top:35%;
+    top:55%;
     left:50%;
     color:#FF0000;
     text-align:center;
@@ -147,7 +152,7 @@ main>section>.main_1 {
 main>section>.main_2 {
     position: absolute;
     font-size: 40px;
-    top:45%;
+    top:63%;
     left:50%;
     color:#FF0000;
     text-align:center;
@@ -157,9 +162,10 @@ main>section>.main_2 {
 main>section>.main_p{
     position: absolute;
     font-size: 30px;
-    top:60%;
+    top:75%;
     left:50%;
-    color:#FF7B7B;
+    color: #eefaff;
+    font-weight: 500;
 
 }
 
