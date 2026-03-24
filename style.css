@@ -190,8 +190,7 @@ main>section>.main_p{
 
     width: 600px;
     height: 600px;
-
-
+    border-radius: 20%;
 
     display: flex;
     justify-content: center;
