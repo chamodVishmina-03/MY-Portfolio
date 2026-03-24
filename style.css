@@ -62,10 +62,6 @@ body {
 /*================================    Main     ============================================================*/
 
 
-#home{
-    position: relative;
-    width: 100%;
-}
 
 .main-photo {
     position: absolute;
@@ -178,10 +174,11 @@ main>section>.main_p{
 .about_section_topic{
     position: absolute;
     font-size: 40px;
-    top:140%;
+    top:130%;
     left:40%;
     color: #ef1b1b;
 }
+
 .about_picture {
 
     position: absolute;
@@ -203,8 +200,19 @@ main>section>.main_p{
 
     position: absolute;
     font-size: 30px;
-    top:175%;
+    top:185%;
     left:50%;
     color: #b5abf4;
     font-weight: 500;
+}
+
+.cv_button{
+    font-size: 20px;
+    background-color: #f80202;
+    position: absolute;
+    top:250%;
+    left:25%;
+}
+.cv_button:hover {
+    background-color: #05e2ff;
 }
