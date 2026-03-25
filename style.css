@@ -58,7 +58,26 @@ nav>a:hover{
 body {
     background: radial-gradient(circle at left, #0a2a3a, #0c5785 70%);
 }
+body::before {
+    content: "";
+    position: fixed;
+    width: 500px;
+    height: 500px;
 
+    background: radial-gradient(circle, rgba(100,100,255,0.2), transparent 70%);
+    filter: blur(80px);
+
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    animation: floatGlow 12s ease-in-out infinite alternate;
+}
+
+@keyframes floatGlow {
+    0% { transform: translate(-50%, -50%) scale(1); }
+    100% { transform: translate(-40%, -60%) scale(1.2); }
+}
 /*================================    Main     ============================================================*/
 
 
@@ -167,6 +186,17 @@ main>section>.main_p{
 
 }
 
+body {
+    margin: 0;
+    height: 200vh; /* enable scrolling */
+    transition: background 0.3s linear;
+}
+
+/* optional smooth look */
+.hero {
+    height: 100vh;
+}
+
 
 
 
@@ -218,4 +248,20 @@ main>section>.main_p{
 }
 .cv_button:hover {
     background-color: #05e2ff;
+}
+
+
+
+
+
+
+
+
+.skills_topic{
+    position: absolute;
+    font-size: 40px;
+    top: 260%;
+    left:40%;
+    color: #ef1b1b;
+
 }
