@@ -224,7 +224,11 @@ body {
     align-items: center;
 
 }
+.about_picture:hover {
+    cursor: pointer;
+    filter: blur(50px);
 
+}
 
 
 
@@ -255,6 +259,7 @@ body {
 
 
 
+/*=====================================    Skills       ====================================================*/
 
 
 .skills_topic{
