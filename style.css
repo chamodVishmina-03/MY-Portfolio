@@ -29,8 +29,9 @@ header> nav>a{
     text-decoration: none;
     font-family: "Arial Narrow";
     justify-content: space-evenly;
-    margin: 0px 20px;
+    margin:0px  20px;
     color:white;
+    font-size:20px;
 }
 
 header> section > h4{
@@ -50,8 +51,9 @@ header {
 
 }
 
-nav>a:hover{
-    color:blueviolet;
+header > nav>a:hover{
+    background-color: #fbfbfb;
+    color:black;
 }
 
 
@@ -162,7 +164,7 @@ main>section>.main_1 {
     font-size: 40px;
     top:55%;
     left:50%;
-    color:#FF0000;
+    color: rgba(92, 237, 232, 0.98);
     text-align:center;
 }
 /*developer-2*/
@@ -171,7 +173,7 @@ main>section>.main_2 {
     font-size: 40px;
     top:63%;
     left:50%;
-    color:#FF0000;
+    color:rgba(92, 237, 232, 0.98);
     text-align:center;
 }
 
@@ -181,7 +183,7 @@ main>section>.main_p{
     font-size: 30px;
     top:75%;
     left:50%;
-    color: #00ffe1;
+    color: rgba(208, 217, 230, 0.98);
     font-weight: 500;
 
 }
