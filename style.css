@@ -470,17 +470,18 @@ main > section {
 }
 /* text */
 .main-text {
-    max-width: 500px;
+    max-width: 700px;
     color: white;
-    margin: auto;
+    margin:auto;
+    margin-top: 30px;
 }
 
 .hii {
-    font-size: 40px;
+    font-size: 50px;
 }
 
 .mian_name {
-    font-size: 60px;
+    font-size: 70px;
 }
 
 .main_1,
@@ -489,32 +490,33 @@ main > section {
     color: rgba(92, 237, 232, 0.98);
 }
 
-.typing-container {
-     position: relative;
-     height: 60px; /* adjust for text size */
-     font-size: 30px;
-     color: #5cebe8;
-     font-family: "Arial Black";
-     overflow: hidden;
- }
+.text-slider {
+    position: relative;
+    height: 50px; /* adjust for font-size */
+    font-size: 30px;
+    font-family: "Arial Black", sans-serif;
+    color: #5cebe8;
+    overflow: hidden;
+}
 
-.typing-container span {
+.text-slider span {
     position: absolute;
     width: 100%;
     opacity: 0;
-    animation: fadeWord 6s infinite;
+    transform: translateY(10px);
+    animation: slideFade 6s infinite;
 }
 
-.typing-container span:nth-child(1) { animation-delay: 0s; }
-.typing-container span:nth-child(2) { animation-delay: 3s; }
+.text-slider span:nth-child(1) { animation-delay: 0s; }
+.text-slider span:nth-child(2) { animation-delay: 3s; }
 
-@keyframes fadeWord {
-    0%, 20% { opacity: 0; }
-    25%, 45% { opacity: 1; }
-    50%, 100% { opacity: 0; }
+@keyframes slideFade {
+    0%, 20% { opacity: 0; transform: translateY(20px); }
+    25%, 45% { opacity: 1; transform: translateY(0); }
+    50%, 100% { opacity: 0; transform: translateY(-20px); }
 }
 .main_p {
-    font-size: 25px;
+    font-size: 30px;
     color: rgba(208, 217, 230, 0.98);
 }
 
