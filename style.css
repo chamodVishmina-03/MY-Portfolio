@@ -363,7 +363,7 @@ header > nav > a {
         font-family: "Arial Narrow";
         justify-content:space-evenly;
         margin-left:20px;
-        color:white;
+        color: #f8f7f8;
         font-size:20px;;
 
 }
@@ -484,18 +484,53 @@ main > section {
     font-size: 70px;
 }
 
-.main_1,
-.main_2 {
-    font-size: 35px;
-    color: rgba(92, 237, 232, 0.98);
+
+
+.mian_name {
+    font-size: 70px;
+    color: #ffffff;
+    border-right: 3px solid #000000;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 0;
+
+    animation: typing 4s steps(20) infinite alternate,
+    blink 0s infinite;
 }
 
+@keyframes typing {
+    0% { width: 0 }
+    50% { width: 620px }
+    100% { width: 0 }
+}
+
+@keyframes blink {
+    0%,100% { border-color: transparent }
+    50% { border-color: white }
+}
+
+
+
+
+
+
+
+
+
+
+
+.main_1,
+.main_2 {
+    font-size: 45px;
+    color: rgb(182, 38, 251);
+}
+
+/*animation=============================*/
 .text-slider {
     position: relative;
-    height: 50px; /* adjust for font-size */
-    font-size: 30px;
-    font-family: "Arial Black", sans-serif;
-    color: #5cebe8;
+    height: 60px; /* adjust for font-size */
+    font-size: 45px;
+    font-family: "Arial Black";
     overflow: hidden;
 }
 
