@@ -363,7 +363,7 @@ header > nav > a {
         font-family: "Arial Narrow";
         justify-content:space-evenly;
         margin-left:20px;
-        color: #f8f7f8;
+        color:white;
         font-size:20px;;
 
 }
@@ -482,13 +482,14 @@ main > section {
 
 .mian_name {
     font-size: 70px;
+    font-family: "Arial Narrow";
 }
 
 
 
 .mian_name {
     font-size: 70px;
-    color: #ffffff;
+    color: #efe7ff;
     border-right: 3px solid #000000;
     white-space: nowrap;
     overflow: hidden;
@@ -521,16 +522,17 @@ main > section {
 
 .main_1,
 .main_2 {
-    font-size: 45px;
-    color: rgb(182, 38, 251);
+    font-size: 35px;
+    color: #c550ff;
 }
 
 /*animation=============================*/
 .text-slider {
     position: relative;
     height: 60px; /* adjust for font-size */
-    font-size: 45px;
+    font-size: 35px;
     font-family: "Arial Black";
+    color: #c550ff;
     overflow: hidden;
 }
 
