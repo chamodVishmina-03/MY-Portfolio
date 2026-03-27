@@ -480,16 +480,17 @@ main > section {
 
 
 
-/* Projects Section */
+/* =========================   Projects Section ============================== */
 .projects {
     padding: 60px 50px;
 }
 
 .projects_topic {
-    font-size: 36px;
-    color: white;
-    margin-bottom: 40px;
-    text-align: left;
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+    color: #71c5fa;
+    margin-bottom: 90px;
 }
 
 .projects_grid {
@@ -645,10 +646,10 @@ main > section {
 
 .gallery_topic {
     width: 100%;
-    text-align: left;
+    text-align: center;
     font-size: 30px;
     color: #71c5fa;
-    margin-bottom: 50px;
+    margin-bottom: 140px;
 }
 
 .gallery-stage {
@@ -659,7 +660,7 @@ main > section {
 
 .gallery-card {
     position: absolute;
-    border-radius: 12px;
+    border-radius: 20px;
     overflow: hidden;
     cursor: pointer;
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.6);
@@ -674,6 +675,7 @@ main > section {
     object-fit: cover;
     display: block;
     pointer-events: none;
+    margin: auto;
 }
 
 .gallery-overlay {
@@ -685,11 +687,11 @@ main > section {
 }
 
 /* Card positions — image ekage exact layout */
-.gc1 { width: 195px; height: 260px; left: 3%;  top: 30px;  transform: rotate(-3.5deg); z-index: 5; }
-.gc2 { width: 145px; height: 195px; left: 21%; top: 110px; transform: rotate(2deg);    z-index: 4; }
-.gc3 { width: 185px; height: 248px; left: 35%; top: 55px;  transform: rotate(-1deg);   z-index: 6; }
-.gc4 { width: 170px; height: 230px; left: 54%; top: 35px;  transform: rotate(3deg);    z-index: 5; }
-.gc5 { width: 170px; height: 252px; left: 70%; top: 18px;  transform: rotate(-2deg);   z-index: 4; }
+.gc1 { width: 195px; height: 260px; left: 15%;  top: 30px;  transform: rotate(-3.5deg); z-index: 5; }
+.gc2 { width: 145px; height: 195px; left: 30%; top: 110px; transform: rotate(2deg);    z-index: 4; }
+.gc3 { width: 185px; height: 248px; left: 45%; top: 55px;  transform: rotate(-1deg);   z-index: 6; }
+.gc4 { width: 170px; height: 230px; left: 60%; top: 35px;  transform: rotate(3deg);    z-index: 5; }
+.gc5 { width: 170px; height: 252px; left: 75%; top: 18px;  transform: rotate(-2deg);   z-index: 4; }
 
 /* Hover effect */
 .gallery-card:hover {
