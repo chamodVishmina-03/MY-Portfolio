@@ -222,7 +222,7 @@ main > section {
 .main_1,
 .main_2 {
     font-size: 35px;
-    color:#EA0BE6;
+    color: #df0cff;
 }
 
 /*animation=============================*/
@@ -939,7 +939,7 @@ body {
 }
 
 .contact-box {
-    background: #1e293b;
+    background: #04173C;
     padding: 40px;
     border-radius: 10px;
     backdrop-filter: blur(10px);
