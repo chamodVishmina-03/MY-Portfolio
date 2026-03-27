@@ -915,9 +915,66 @@ main > section {
 
 
 
+/* ========================== Contract====================== */
 
+body {
+    margin: 0;
+    font-family: Arial;
+    background: #020617;
+}
 
+.contact {
+    padding: 80px 10%;
+    color: white;
+}
 
+.contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.contact-box {
+    background: rgba(255,255,255,0.1);
+    padding: 40px;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    width: 120px;
+}
+
+.input-group input,
+.input-group textarea {
+    flex: 1;
+    padding: 12px;
+    border: none;
+    background: #e5e7eb;
+    border-radius: 4px;
+}
+
+textarea {
+    height: 150px;
+}
+
+button {
+    padding: 12px 30px;
+    background: #4c1d95;
+    color: white;
+    border: none;
+    float: right;
+    cursor: pointer;
+}
+
+button:hover {
+    background: deepskyblue;
+}
 
 
 
