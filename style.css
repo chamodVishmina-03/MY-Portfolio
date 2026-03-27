@@ -697,4 +697,20 @@ main > section {
     }
 
 
+
+    /*==================================   education  ==============================================*/
+
+    .education {
+        padding: 40px 20px;
+    }
+
+    .edu-item {
+        padding: 14px 20px;
+    }
+
+    .edu-item p {
+        font-size: 15px;
+    }
+
+
 }
