@@ -11,3 +11,22 @@
 //         `linear-gradient(270deg, ${color1}, ${color2}, ${color1})`;
 //
 // });
+
+// Hamburger menu toggle
+function toggleMenu() {
+    const nav = document.getElementById('nav-menu');
+    const hamburger = document.getElementById('hamburger');
+
+    nav.classList.toggle('open');
+    hamburger.classList.toggle('active');
+}
+
+// Nav link click කළාම menu close වෙන්න
+document.addEventListener('DOMContentLoaded', function () {
+    document.querySelectorAll('nav a').forEach(link => {
+        link.addEventListener('click', () => {
+            document.getElementById('nav-menu').classList.remove('open');
+            document.getElementById('hamburger').classList.remove('active');
+        });
+    });
+});
