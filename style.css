@@ -470,7 +470,7 @@ main > section {
 }
 /* text */
 .main-text {
-    max-width: 700px;
+    max-width: 600px;
     color: white;
     margin:auto;
     margin-top: 30px;
@@ -501,7 +501,7 @@ main > section {
 
 @keyframes typing {
     0% { width: 0 }
-    50% { width: 620px }
+    50% { width: 600px }
     100% { width: 0 }
 }
 
@@ -632,8 +632,43 @@ main > section {
         height: 250px;
     }
 
+    .mian_name,.hii {
+        font-size: 30px;
+        margin:auto;
+    }
+
+
+
     .mian_name {
-        font-size: 40px;
+        font-size: 30px;
+        color: #efe7ff;
+        border-right: 3px solid #000000;
+        white-space: nowrap;
+        overflow: hidden;
+        width: 0;
+
+        animation: typing 4s steps(20) infinite alternate,
+        blink 0s infinite;
+    }
+
+    @keyframes typing {
+        0% { width: 0 }
+        50% { width: 300px }
+        100% { width: 0 }
+    }
+
+    @keyframes blink {
+        0%,100% { border-color: transparent }
+        50% { border-color: white }
+    }
+
+
+
+
+
+    .text-slider{
+        font-size: 20px;
+
     }
 
     .about {
