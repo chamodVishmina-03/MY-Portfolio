@@ -920,7 +920,7 @@ main > section {
 body {
     margin: 0;
     font-family: Arial;
-    background: #020617;
+    /*background: #020617;*/
 }
 
 .contact {
@@ -934,7 +934,7 @@ body {
 }
 
 .contact-box {
-    background: rgba(255,255,255,0.1);
+    background: #020617;
     padding: 40px;
     border-radius: 10px;
     backdrop-filter: blur(10px);
