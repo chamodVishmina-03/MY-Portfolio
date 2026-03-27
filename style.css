@@ -613,7 +613,21 @@ main > section {
 
 
     /*==================================   Skills  ==============================================*/
+    @media (max-width: 768px) {
+        .skills_icons {
+            justify-content: center;
+        }
 
+        .skill-icon {
+            width: 75px;
+            height: 75px;
+        }
+
+        .skill-icon img {
+            width: 45px;
+            height: 45px;
+        }
+    }
 
 
 }
