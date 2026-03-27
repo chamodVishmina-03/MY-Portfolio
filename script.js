@@ -191,7 +191,15 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
+function openAllExercises() {
+    document.getElementById('all-exercises-overlay').classList.add('active');
+    document.body.style.overflow = 'hidden';
+}
 
+function closeAllExercises() {
+    document.getElementById('all-exercises-overlay').classList.remove('active');
+    document.body.style.overflow = 'auto';
+}
 
 
 
