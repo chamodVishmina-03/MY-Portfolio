@@ -1,4 +1,25 @@
+/*background bubles*/
+/* Bubble Canvas */
+#bubble-canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    pointer-events: none;
+}
 
+/* ඔයාගේ existing content z-index fix */
+header {
+    z-index: 999;
+    position: sticky;
+}
+
+main, section {
+    position: relative;
+    z-index: 1;
+}
 /* ================= HEADER ================= */
 
 header {
