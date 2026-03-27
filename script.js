@@ -163,6 +163,13 @@ function animate() {
 animate();
 
 
+
+
+
+
+
+
+
 // Hamburger menu toggle
 function toggleMenu() {
     const nav = document.getElementById('nav-menu');
@@ -185,6 +192,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
+
+
+
 function openAllProjects() {
     const overlay = document.getElementById('all-projects-overlay');
     overlay.classList.add('active');
@@ -196,3 +206,23 @@ function closeAllProjects() {
     overlay.classList.remove('active');
     document.body.style.overflow = 'auto';
 }
+
+
+
+
+
+// Gallery click interaction
+const galleryCards = document.querySelectorAll('.gallery-card');
+const galleryDots  = document.querySelectorAll('.gdot');
+
+galleryCards.forEach((card, i) => {
+    card.addEventListener('click', () => {
+        const isActive = card.classList.contains('g-active');
+        galleryCards.forEach(c => c.classList.remove('g-active'));
+        if (!isActive) {
+            card.classList.add('g-active');
+            galleryDots.forEach(d => d.classList.remove('active'));
+            galleryDots[Math.min(Math.floor(i * 3 / 5), 2)].classList.add('active');
+        }
+    });
+});
