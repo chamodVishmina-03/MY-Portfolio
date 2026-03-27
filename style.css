@@ -925,7 +925,12 @@ body {
 
 .contact {
     padding: 80px 10%;
-    color: white;
+    text-align: center;
+
+
+    font-size: 20px;
+    color: #71c5fa;
+    margin-bottom: 140px;
 }
 
 .contact h2 {
@@ -934,7 +939,7 @@ body {
 }
 
 .contact-box {
-    background: #020617;
+    background: #1e293b;
     padding: 40px;
     border-radius: 10px;
     backdrop-filter: blur(10px);
