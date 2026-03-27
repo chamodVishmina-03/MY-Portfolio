@@ -963,16 +963,11 @@ textarea {
     height: 150px;
 }
 
-button {
+.contact> button {
     padding: 12px 30px;
-    background: #4c1d95;
-    color: white;
-    border: none;
-    float: right;
-    cursor: pointer;
+    margin:auto;
 }
-
-button:hover {
+    .contact> button:hover {
     background: deepskyblue;
 }
 

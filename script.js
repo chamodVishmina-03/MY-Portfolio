@@ -236,3 +236,27 @@ galleryCards.forEach((card, i) => {
         }
     });
 });
+
+
+
+
+
+
+// init emailJS
+(function(){
+    emailjs.init("xqmczvlutq0LncKu4");
+})();
+
+//  submit
+document.getElementById("contact-form")
+    .addEventListener("submit", function(e) {
+        e.preventDefault();
+
+        emailjs.sendForm("service_h1dzp3m", "template_1023dd8", this)
+            .then(function() {
+                alert("Email sent successfully!");
+            }, function(error) {
+                console.log(error);
+                alert("Failed to send email");
+            });
+    });
