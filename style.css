@@ -613,7 +613,7 @@ main > section {
     margin-top: 100px;
 }
 
-/* ================= RESPONSIVE ================= */
+/* ====================================================================== RESPONSIVE ========================================================================================== */
 
 @media (max-width: 768px) {
 
@@ -630,10 +630,11 @@ main > section {
     .main-photo {
         width: 250px;
         height: 250px;
+        margin:auto;
     }
 
     .mian_name,.hii {
-        font-size: 30px;
+        font-size: 25px;
         margin:auto;
     }
 
@@ -646,6 +647,8 @@ main > section {
         white-space: nowrap;
         overflow: hidden;
         width: 0;
+
+        margin-top: 50px;
 
         animation: typing 4s steps(20) infinite alternate,
         blink 0s infinite;
@@ -666,12 +669,56 @@ main > section {
 
 
 
+
     .text-slider{
         font-size: 20px;
+        margin-top: 70px;
+        margin-right: 0px;
 
     }
 
+    .text-slider {
+        font-size: 20px;
+        position: relative;
+        height: 50px; /* adjust for font-size */
+        font-size: 20px;
+        font-family: "Arial Black";
+        color: #c550ff;
+        overflow: hidden;
+
+    }
+
+    .text-slider span {
+        position: absolute;
+        width: 100%;          /* 40% වෙනුවට */
+        text-align: right;    /* right align */
+        right: 0;             /* right edge ට snap */
+        left: auto;
+        opacity: 0;
+        transform: translateY(10px);
+        animation: slideFade 4s infinite;
+        padding-right: 10px;  /* margin-right: 20px වෙනුවට */
+    }
+
+    .text-slider span:nth-child(1) { animation-delay: 0s; }
+    .text-slider span:nth-child(2) { animation-delay: 2s; }
+
+    @keyframes slideFade {
+        0%, 20% { opacity: 0; transform: translateY(10px); }
+        25%, 45% { opacity: 1; transform: translateY(0); }
+        50%, 100% { opacity: 0; transform: translateY(10px); }
+    }
+
+
+    .main_p{
+        font-size: 20px;
+    }
+
+
+
+
     .about {
+        font-size: 30px;
         flex-direction: column;
         text-align: center;
     }
