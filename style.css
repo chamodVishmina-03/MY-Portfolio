@@ -331,6 +331,7 @@ main > section {
 .skills {
     padding: 60px 50px;
     text-align: center;
+    background: #04173C;
 }
 
 .skills_topic {
@@ -483,6 +484,7 @@ main > section {
 /* =========================   Projects Section ============================== */
 .projects {
     padding: 60px 50px;
+
 }
 
 .projects_topic {
@@ -501,7 +503,7 @@ main > section {
 
 /* Project Card */
 .project-card {
-    background: rgba(255, 255, 255, 0.05);
+    background: #1e293b;
     border: 1px solid rgba(255, 255, 255, 0.12);
     border-radius: 14px;
     overflow: hidden;
@@ -645,6 +647,7 @@ main > section {
 /* ================= EXERCISES ================= */
 .exercises {
     padding: 60px 50px;
+
 }
 
 .exercises_topic {
@@ -662,7 +665,7 @@ main > section {
 }
 
 .exercise-card {
-    background: rgba(255, 255, 255, 0.05);
+    background: #1e293b;
     border: 1px solid rgba(255, 255, 255, 0.12);
     border-radius: 14px;
     overflow: hidden;
@@ -757,6 +760,7 @@ main > section {
 }
 
 .gallery-card {
+    background: #1e293b;
     position: absolute;
     border-radius: 20px;
     overflow: hidden;
@@ -1144,8 +1148,15 @@ main > section {
     .gc5 { width: 108px; height: 160px; left: 72%; top: 12px; }
 
 
+    /*==================================   Services  ==============================================*/
 
+    .services {
+        padding: 60px 5%;
+    }
 
+    .services h2 {
+        font-size: 2rem;
+    }
 
 
 
