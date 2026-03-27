@@ -638,6 +638,104 @@ main > section {
     gap: 24px;=
 }
 
+
+
+
+
+/* ================= EXERCISES ================= */
+.exercises {
+    padding: 60px 50px;
+}
+
+.exercises_topic {
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+    color: #71c5fa;
+    margin-bottom: 90px;
+}
+
+.exercises_grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.exercise-card {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 14px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.exercise-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
+}
+
+.exercise-thumb {
+    width: 100%;
+    height: 180px;
+    background: white;
+    overflow: hidden;
+}
+
+.exercise-thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.exercise-info {
+    padding: 16px;
+}
+
+.ex-tag {
+    display: inline-block;
+    padding: 3px 10px;
+    background: linear-gradient(135deg, #7b2ff7, #c550ff);
+    color: white;
+    border-radius: 12px;
+    font-size: 11px;
+    margin-bottom: 8px;
+}
+
+.exercise-info h4 {
+    color: white;
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+.exercise-info p {
+    color: rgba(255,255,255,0.6);
+    font-size: 13px;
+    margin-bottom: 14px;
+    line-height: 1.5;
+}
+
+/* All Exercises Overlay reuses same overlay styles */
+.all-exercises-overlay {
+    display: none;
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: #0a1628;
+    z-index: 9999;
+    overflow-y: auto;
+    padding: 40px 50px;
+    animation: fadeInOverlay 0.4s ease;
+}
+
+.all-exercises-overlay.active {
+    display: block;
+}
+
+
+
+
+
+
 /* ================= GALLERY ================= */
 .gallery {
     padding: 60px 50px;
@@ -1012,6 +1110,22 @@ main > section {
     .all-projects-overlay {
         padding: 30px 20px;
     }
+
+    /*==================================   Excersises  ==============================================*/
+
+    .exercises {
+        padding: 40px 20px;
+    }
+
+    .exercises_grid {
+        grid-template-columns: 1fr;
+    }
+
+    .all-exercises-overlay {
+        padding: 30px 20px;
+    }
+
+
 
     /*==================================   Gallery  ==============================================*/
 
