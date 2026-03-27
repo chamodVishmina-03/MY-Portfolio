@@ -384,7 +384,73 @@ main > section {
 
 
 
+/* ============Education Section=========== */
+.education {
+    padding: 60px 50px;
+}
 
+.education_topic {
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+    color: #71c5fa;
+    margin-bottom: 90px;
+}
+
+.edu-timeline {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+}
+
+/* Text boxes */
+.edu-item {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 16px 40px;
+    text-align: center;
+}
+
+.edu-item p {
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0;
+}
+
+/* Arrow container */
+.edu-arrow {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+    padding: 4px 0;
+}
+
+/* Three chevron spans — wave fade */
+.edu-arrow span {
+    display: block;
+    width: 16px;
+    height: 16px;
+    border-right: 3px solid #e53935;
+    border-bottom: 3px solid #e53935;
+    transform: rotate(45deg);
+    margin: -4px 0;
+    opacity: 0;
+    animation: arrowFade 1.2s ease-in-out infinite;
+}
+
+.edu-arrow span:nth-child(1) { animation-delay: 0s; }
+.edu-arrow span:nth-child(2) { animation-delay: 0.2s; }
+.edu-arrow span:nth-child(3) { animation-delay: 0.4s; }
+
+@keyframes arrowFade {
+    0%   { opacity: 0; transform: rotate(45deg) translateY(-4px); }
+    50%  { opacity: 1; transform: rotate(45deg) translateY(0px); }
+    100% { opacity: 0; transform: rotate(45deg) translateY(4px); }
+}
 
 
 
