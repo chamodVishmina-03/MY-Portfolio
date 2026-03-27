@@ -30,3 +30,18 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 });
+
+
+
+
+function openAllProjects() {
+    const overlay = document.getElementById('all-projects-overlay');
+    overlay.classList.add('active');
+    document.body.style.overflow = 'hidden';
+}
+
+function closeAllProjects() {
+    const overlay = document.getElementById('all-projects-overlay');
+    overlay.classList.remove('active');
+    document.body.style.overflow = 'auto';
+}

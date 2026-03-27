@@ -13,7 +13,7 @@ header {
     top: 0;
     z-index: 1000;
 
-    background: radial-gradient(circle at left, #0a2a3a, #0c5785 70%);
+    background: radial-gradient(circle at left, #1c3a7a, #0c5785 70%);
     box-shadow: 0px 10px 10px gray;
 }
 
@@ -460,6 +460,165 @@ main > section {
 
 
 
+/* Projects Section */
+.projects {
+    padding: 60px 50px;
+}
+
+.projects_topic {
+    font-size: 36px;
+    color: white;
+    margin-bottom: 40px;
+    text-align: left;
+}
+
+.projects_grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+/* Project Card */
+.project-card {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 14px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
+}
+
+.project-thumb {
+    width: 100%;
+    height: 180px;
+    background: white;
+    overflow: hidden;
+}
+
+.project-thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.project-info {
+    padding: 16px;
+}
+
+.project-info h4 {
+    color: white;
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+.project-info p {
+    color: rgba(255,255,255,0.6);
+    font-size: 13px;
+    margin-bottom: 14px;
+    line-height: 1.5;
+}
+
+/* Visit Button */
+.visit-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 18px;
+    background: #333;
+    color: white;
+    text-decoration: none;
+    border-radius: 20px;
+    font-size: 13px;
+    transition: background 0.3s ease;
+}
+
+.visit-btn:hover {
+    background: #555;
+}
+
+/* Explore More Button */
+.explore-wrap {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.explore-btn {
+    padding: 12px 36px;
+    background: linear-gradient(135deg, #7b2ff7, #c550ff);
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.explore-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(197, 80, 255, 0.4);
+}
+
+/* All Projects Overlay */
+.all-projects-overlay {
+    display: none;
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: #0a1628;
+    z-index: 9999;
+    overflow-y: auto;
+    padding: 40px 50px;
+    animation: fadeInOverlay 0.4s ease;
+}
+
+.all-projects-overlay.active {
+    display: block;
+}
+
+@keyframes fadeInOverlay {
+    from { opacity: 0; transform: translateY(20px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+.all-projects-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.all-projects-header h2 {
+    color: white;
+    font-size: 32px;
+}
+
+.close-btn {
+    padding: 10px 24px;
+    background: rgba(255,255,255,0.1);
+    color: white;
+    border: 1px solid rgba(255,255,255,0.2);
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background 0.3s;
+}
+
+.close-btn:hover {
+    background: rgba(255,255,255,0.2);
+}
+
+.all-projects-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;=
+}
+
+
+
 
 
 
@@ -710,6 +869,21 @@ main > section {
 
     .edu-item p {
         font-size: 15px;
+    }
+
+
+
+    .projects {
+        padding: 40px 20px;
+    }
+
+    .projects_grid,
+    .all-projects-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .all-projects-overlay {
+        padding: 30px 20px;
     }
 
 
