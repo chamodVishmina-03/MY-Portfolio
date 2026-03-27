@@ -687,11 +687,11 @@ main > section {
 }
 
 /* Card positions — image ekage exact layout */
-.gc1 { width: 195px; height: 260px; left: 15%;  top: 30px;  transform: rotate(-3.5deg); z-index: 5; }
-.gc2 { width: 145px; height: 195px; left: 30%; top: 110px; transform: rotate(2deg);    z-index: 4; }
-.gc3 { width: 185px; height: 248px; left: 45%; top: 55px;  transform: rotate(-1deg);   z-index: 6; }
-.gc4 { width: 170px; height: 230px; left: 60%; top: 35px;  transform: rotate(3deg);    z-index: 5; }
-.gc5 { width: 170px; height: 252px; left: 75%; top: 18px;  transform: rotate(-2deg);   z-index: 4; }
+.gc1 { width: 295px; height: 360px; left: 15%;  top: 30px;  transform: rotate(-3.5deg); z-index: 5; }
+.gc2 { width: 245px; height: 295px; left: 30%; top: 110px; transform: rotate(2deg);    z-index: 4; }
+.gc3 { width: 285px; height: 348px; left: 45%; top: 55px;  transform: rotate(-1deg);   z-index: 6; }
+.gc4 { width: 270px; height: 330px; left: 60%; top: 35px;  transform: rotate(3deg);    z-index: 5; }
+.gc5 { width: 270px; height: 352px; left: 75%; top: 18px;  transform: rotate(-2deg);   z-index: 4; }
 
 /* Hover effect */
 .gallery-card:hover {
@@ -712,7 +712,7 @@ main > section {
     display: flex;
     justify-content: center;
     gap: 9px;
-    margin-top: 30px;
+    margin-top: 100px;
 }
 
 .gdot {
