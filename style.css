@@ -10,7 +10,6 @@
     pointer-events: none;
 }
 
-/* ඔයාගේ existing content z-index fix */
 header {
     z-index: 999;
     position: sticky;
@@ -223,7 +222,7 @@ main > section {
 .main_1,
 .main_2 {
     font-size: 35px;
-    color: #c550ff;
+    color:#EA0BE6;
 }
 
 /*animation=============================*/
@@ -232,7 +231,7 @@ main > section {
     height: 60px; /* adjust for font-size */
     font-size: 35px;
     font-family: "Arial Black";
-    color: #c550ff;
+    color:#EA0BE6;
     overflow: hidden;
 }
 
@@ -302,7 +301,7 @@ main > section {
 .about-text {
     max-width: 850px;
     font-size: 35px;
-    color: #b5abf4;
+    color: #C1F1FF;
     text-align: center;
     margin-top: 100px;
     align-items:center;
@@ -405,7 +404,7 @@ main > section {
 
 
 
-/* ============Education Section=========== */
+/* ============          Education Section           =========== */
 .education {
     padding: 60px 50px;
 }
@@ -436,27 +435,27 @@ main > section {
 
 .edu-item p {
     color: white;
-    font-size: 18px;
+    font-size: 25px;
     font-weight: 600;
     margin: 0;
 }
 
-/* Arrow container */
+/* Arrow  */
 .edu-arrow {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 0;
-    padding: 4px 0;
+    padding: 8px 0;
 }
 
-/* Three chevron spans — wave fade */
+/* arrow  spans */
 .edu-arrow span {
     display: block;
-    width: 16px;
-    height: 16px;
-    border-right: 3px solid #e53935;
-    border-bottom: 3px solid #e53935;
+    width: 25px;
+    height: 25px;
+    border-right: 5px solid #e53935;
+    border-bottom: 5px solid #e53935;
     transform: rotate(45deg);
     margin: -4px 0;
     opacity: 0;
@@ -759,7 +758,7 @@ main > section {
 
 
     .mian_name {
-        font-size: 30px;
+        font-size: 40px;
         color: #efe7ff;
         border-right: 3px solid #000000;
         white-space: nowrap;
@@ -855,6 +854,19 @@ main > section {
     .about_picture {
         width: 250px;
         height: 250px;
+    }
+
+    .cv_button {
+        padding: 10px 20px;
+        font-size: 18px;
+        background-color: #f80202;
+        border: none;
+        color: white;
+        cursor: pointer;
+        margin-top: 0;
+        margin-right: 0;
+        border-radius: 6px;
+        width: 35%;
     }
 
 

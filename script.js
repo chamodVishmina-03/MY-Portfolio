@@ -40,13 +40,13 @@ window.addEventListener('touchmove', (e) => {
 
 // Color palette
 const colors = [
-    '#c550ff',
-    '#7b2ff7',
+    '#cb79fa',
+    '#8240f3',
     '#00e5ff',
-    '#00e676',
+    '#9fffcc',
     '#ff4081',
     '#ff9100',
-    '#ffeb3b',
+    '#f8efa3',
     '#2979ff',
 ];
 
