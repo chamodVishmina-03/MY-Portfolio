@@ -19,6 +19,12 @@ main, section {
     position: relative;
     z-index: 1;
 }
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
 /* ================= HEADER ================= */
 
 header {
@@ -119,6 +125,8 @@ body::before {
 /* =================   hero      ============================== ================= */
 
 main > section {
+    height: 100vh;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -129,11 +137,11 @@ main > section {
 
 /* image */
 .main-photo {
-    width: 600px;
-    height: 600px;
+    width: 550px;
+   aspect-ratio: 1/1;
     border-radius: 50%;
     margin-left: 70px;
-    margin-top: 100px;
+    margin-top: -120px;
 
 
     display: flex;
@@ -252,7 +260,7 @@ main > section {
     50%, 100% { opacity: 0; transform: translateY(-20px); }
 }
 .main_p {
-    font-size: 30px;
+    font-size: 25px;
     color: rgba(208, 217, 230, 0.98);
 }
 
