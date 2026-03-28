@@ -1160,7 +1160,7 @@ textarea {
 
     .cv_button {
         padding: 10px 20px;
-        font-size: 18px;
+        font-size: 10px;
         background-color: #f80202;
         border: none;
         color: white;
@@ -1168,7 +1168,7 @@ textarea {
         margin-top: 0;
         margin-right: 0;
         border-radius: 6px;
-        width: 35%;
+        width: 40%;
     }
 
 
