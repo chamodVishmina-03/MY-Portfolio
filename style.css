@@ -1068,22 +1068,31 @@ textarea {
 
 
     /*======================                      home              ==================*/
+    /*==================================   home  ==============================================*/
     main > section {
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
         text-align: center;
         padding: 100px 20px 40px;
+        height: auto;
+        min-height: 100vh;
+        gap: 20px;
     }
 
     /* PROFILE IMAGE */
     .main-photo {
-        width: 220px;
-        height: 220px;
-        margin: 100px auto 30px; /* FIXED spacing */
+        width: 200px;
+        height: 200px;
+        margin: 0 auto;
+        margin-top: 20px;
     }
 
     /* TEXT BLOCK */
     .main-text {
-        margin-top: 10px;
+        margin-top: 0;
+        width: 100%;
+        text-align: center;
     }
 
     /* HI TEXT */
@@ -1094,53 +1103,43 @@ textarea {
 
     /* NAME */
     .mian_name {
-        font-size: 32px;
+        font-size: 30px;
         border-right: 2px solid white;
         white-space: nowrap;
         overflow: hidden;
         width: 0;
-        margin:auto;
-
+        margin: 0 auto;
         animation: typing 4s steps(20) infinite alternate,
         blink 1s infinite;
     }
 
-    /* FIXED typing width */
     @keyframes typing {
-        0% {
-            width: 0
-        }
-        50% {
-            width: 260px
-        }
-        /* IMPORTANT */
-        100% {
-            width: 0
-        }
+        0%   { width: 0 }
+        50%  { width: 240px }
+        100% { width: 0 }
     }
 
     /* SLIDER TEXT */
     .text-slider {
-        font-size: 20px;
-        margin-top: 20px;
-        height: 40px;
+        font-size: 18px;
+        margin-top: 15px;
+        height: 35px;
     }
 
     .text-slider span {
-        text-align: center; /* FIXED (was right ❌) */
+        text-align: center;
         left: 0;
         right: 0;
-        padding: 0;
     }
 
     /* PARAGRAPH */
     .main_p {
-        font-size: 16px;
+        font-size: 15px;
         line-height: 1.6;
-        margin-top: 20px;
+        margin-top: 15px;
         padding: 0 10px;
+        text-align: center;
     }
-
 
     /*==================================   about  ==============================================*/
     .about {
