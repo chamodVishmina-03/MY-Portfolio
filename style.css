@@ -69,7 +69,7 @@ header > section {
 
 /* nav */
 header > nav{
-   margin-right: 60px;
+   margin-right: 10px;
 }
 header > nav > a {
     text-decoration: none;
@@ -141,7 +141,7 @@ main > section {
    aspect-ratio: 1/1;
     border-radius: 50%;
     margin-left: 70px;
-    margin-top: -120px;
+    margin-top: 10px;
 
 
     display: flex;
