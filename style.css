@@ -1277,16 +1277,83 @@ textarea {
     }
 
 
-    /*==================================   Services  ==============================================*/
+    /* ========================== Services ========================== */
     .services {
-        padding: 60px 5%;
+        padding: 80px 10%;
+        background: #04173c;
+        color: #fff;
+        text-align: center;
+        display: block; /* grid එපා */
     }
 
     .services h2 {
-        font-size: 2rem;
+        font-size: 30px;
+        color: #71c5fa;
+        margin-bottom: 40px;
     }
-    .services-card{
+
+    .services-card-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        max-width: 700px;
+        margin: 0 auto;
+    }
+
+    .service-card {
+        background: #1e293b;
+        padding: 30px 20px;
+        border-radius: 15px;
+        transition: 0.4s ease;
+        position: relative;
+        overflow: hidden;
+        cursor: pointer;
         width: 100%;
+    }
+
+    .service-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 10px 25px rgba(0, 191, 255, 0.3);
+    }
+
+    .service-card::before {
+        content: "";
+        position: absolute;
+        width: 0%;
+        height: 4px;
+        top: 0;
+        left: 0;
+        background: deepskyblue;
+        transition: 0.4s ease;
+    }
+
+    .service-card:hover::before {
+        width: 100%;
+    }
+
+    .service-card h3 {
+        font-size: 1.2rem;
+        margin-bottom: 15px;
+        color: deepskyblue;
+    }
+
+    .service-card p {
+        font-size: 0.9rem;
+        line-height: 1.6;
+        color: #cbd5e1;
+    }
+
+    /* Mobile */
+    @media (max-width: 768px) {
+        .services {
+            padding: 60px 5%;
+        }
+
+        .services-card-container {
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+            max-width: 100%;
+        }
     }
 
 
