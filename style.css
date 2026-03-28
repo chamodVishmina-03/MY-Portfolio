@@ -135,7 +135,7 @@ main > section {
     height: 600px;
     border-radius: 50%;
     margin-left: 70px;
-    margin-top: -250px;
+    margin-top: -60px;
 
 
     display: flex;
@@ -169,7 +169,7 @@ main > section {
     filter: blur(20px);
     rotate: 180deg;
 }
-.main-photo img:hover {
+.main-photo img {
     animation: float 1s ease-in-out infinite alternate;
 }
 
@@ -254,8 +254,9 @@ main > section {
     50%, 100% { opacity: 0; transform: translateY(-20px); }
 }
 .main_p {
-    font-size: 30px;
+    font-size: 20px;
     color: rgba(208, 217, 230, 0.98);
+
 }
 
 
