@@ -1124,7 +1124,7 @@ textarea {
     }
 
     .text-slider span {
-        text-align: center;   /* FIXED (was right ❌) */
+        text-align: center;
         left: 0;
         right: 0;
         padding: 0;
@@ -1174,7 +1174,7 @@ textarea {
 
 
     /*==================================   Skills  ==============================================*/
-    @media (max-width: 768px) {
+
         .skills_icons {
             justify-content: center;
         }
@@ -1188,7 +1188,7 @@ textarea {
             width: 45px;
             height: 45px;
         }
-    }
+
 
 
 
