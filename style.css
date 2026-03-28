@@ -995,14 +995,39 @@ textarea {
 
 @media (max-width: 768px) {
 
-
+    /* ===== HEADER ===== */
     header {
-        gap: 10px;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
         padding: 10px 20px;
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
+    }
+
+    header > nav {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background: rgba(0, 0, 40, 0.95);
+        border-radius: 12px;
+        padding: 10px 0;
+        margin-top: 10px;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        z-index: 999;
+    }
+
+    header > nav.open {
+        display: flex;
+    }
+
+    header > nav > a {
+        padding: 14px 24px;
+        border-bottom: 1px solid rgba(255,255,255,0.1);
+        margin: 0;
+        font-size: 16px;
+    }
+
+    header > nav > a:last-child {
+        border-bottom: none;
     }
 
     .hamburger {
@@ -1026,185 +1051,150 @@ textarea {
         transition: all 0.3s ease;
     }
 
-    /*  animation */
     .hamburger.active span:nth-child(1) {
         transform: rotate(45deg) translate(5px, 6px);
     }
-
     .hamburger.active span:nth-child(2) {
         opacity: 0;
     }
-
     .hamburger.active span:nth-child(3) {
         transform: rotate(-45deg) translate(5px, -6px);
     }
 
-    /* --- Nav mobile --- */
-    nav {
-        display: none;
-        flex-direction: column;
-        width: 100%;
-        background: rgba(0, 0, 40, 0.95);
-        border-radius: 12px;
-        padding: 10px 0;
-        margin-top: 10px;
-        gap: 0;
-    }
 
-    nav.open {
-        display: flex;
-    }
-
-    nav a {
-        padding: 14px 24px;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-        border-radius: 0;
-        font-size: 16px;
-    }
-
-    nav a:last-child {
-        border-bottom: none;
-    }
-
-
-    /*======================                      home              ==================*/
-    /*==================================   home  ==============================================*/
+    /* ===== HERO ===== */
     main > section {
         flex-direction: column;
-        justify-content: center;
+        justify-content: flex-start;
         align-items: center;
         text-align: center;
-        padding: 100px 20px 40px;
+        padding: 90px 20px 40px;
         height: auto;
         min-height: 100vh;
-        gap: 20px;
+        gap: 10px;
     }
 
-    /* PROFILE IMAGE */
     .main-photo {
-        width: 200px;
-        height: 200px;
-        margin: 0 auto;
-        margin-top: 20px;
+        width: 180px;
+        height: 180px;
+        margin: 10px auto 0;
     }
 
-    /* TEXT BLOCK */
     .main-text {
-        margin-top: 0;
         width: 100%;
+        margin: 0 auto;
         text-align: center;
     }
 
-    /* HI TEXT */
     .hii {
-        font-size: 24px;
-        margin-bottom: 5px;
+        font-size: 22px;
+        margin: 5px 0;
     }
 
-    /* NAME */
     .mian_name {
-        font-size: 30px;
-        border-right: 2px solid white;
-        white-space: nowrap;
-        overflow: hidden;
-        width: 0;
+        font-size: 28px;
         margin: 0 auto;
-        animation: typing 4s steps(20) infinite alternate,
-        blink 1s infinite;
+        width: 0;
+        animation: typing-mobile 4s steps(16) infinite alternate, blink 1s infinite;
     }
 
-    @keyframes typing {
+    @keyframes typing-mobile {
         0%   { width: 0 }
-        50%  { width: 240px }
+        50%  { width: 220px }
         100% { width: 0 }
     }
 
-    /* SLIDER TEXT */
     .text-slider {
         font-size: 18px;
-        margin-top: 15px;
         height: 35px;
+        margin-top: 10px;
     }
 
     .text-slider span {
-        text-align: center;
         left: 0;
         right: 0;
-    }
-
-    /* PARAGRAPH */
-    .main_p {
-        font-size: 15px;
-        line-height: 1.6;
-        margin-top: 15px;
-        padding: 0 10px;
         text-align: center;
     }
 
-    /*==================================   about  ==============================================*/
+    .main_p {
+        font-size: 14px;
+        line-height: 1.7;
+        padding: 0 10px;
+        margin-top: 10px;
+    }
+
+
+    /* ===== ABOUT ===== */
     .about {
-        font-size: 20px;
         flex-direction: column;
         text-align: center;
-    }
-
-    .about-text {
-        font-size: 20px;
+        padding: 60px 20px;
     }
 
     .about_picture {
-        width: 250px;
-        height: 250px;
+        width: 200px;
+        height: 200px;
+    }
+
+    .about_picture img {
+        width: 200px;
+        height: 200px;
+        margin-top: 0;
+    }
+
+    .about-text {
+        font-size: 16px;
+        margin-top: 20px;
+        max-width: 100%;
     }
 
     .cv_button {
-        padding: 10px 20px;
-        font-size: 18px;
-        background-color: #f80202;
-        border: none;
-        color: white;
-        cursor: pointer;
-        margin-top: 0;
-        margin-right: 0;
-        border-radius: 6px;
-        width: 35%;
+        width: 50%;
+        font-size: 15px;
     }
 
 
-    /*==================================   Skills  ==============================================*/
-    @media (max-width: 768px) {
-        .skills_icons {
-            justify-content: center;
-        }
+    /* ===== SKILLS ===== */
+    .skills {
+        padding: 40px 20px;
+    }
 
-        .skill-icon {
-            width: 75px;
-            height: 75px;
-        }
+    .skills_icons {
+        justify-content: center;
+        gap: 20px;
+    }
 
-        .skill-icon img {
-            width: 45px;
-            height: 45px;
-        }
+    .skill-icon {
+        width: 70px;
+        height: 70px;
+    }
+
+    .skill-icon img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .skill-card p {
+        font-size: 14px;
     }
 
 
-
-    /*==================================   education  ==============================================*/
+    /* ===== EDUCATION ===== */
     .education {
         padding: 40px 20px;
     }
 
     .edu-item {
-        padding: 14px 20px;
+        padding: 12px 16px;
+        width: 90%;
     }
 
     .edu-item p {
-        font-size: 15px;
+        font-size: 14px;
     }
 
 
-    /*==================================   Project  ==============================================*/
+    /* ===== PROJECTS ===== */
     .projects {
         padding: 40px 20px;
     }
@@ -1218,7 +1208,8 @@ textarea {
         padding: 30px 20px;
     }
 
-    /*==================================   Excersises  ==============================================*/
+
+    /* ===== EXERCISES ===== */
     .exercises {
         padding: 40px 20px;
     }
@@ -1232,129 +1223,95 @@ textarea {
     }
 
 
-    /*==================================   Gallery  ==============================================*/
+    /* ===== GALLERY ===== */
     .gallery {
-        padding: 40px 20px;
+        padding: 40px 10px;
+    }
+
+    .gallery_topic {
+        margin-bottom: 60px;
     }
 
     .gallery-stage {
-        height: 280px;
+        height: 220px;
     }
 
-    .gc1 {
-        width: 120px;
-        height: 165px;
-        left: 2%;
-        top: 20px;
-    }
+    .gc1 { width: 100px; height: 140px; left: 2%;  top: 15px; }
+    .gc2 { width: 85px;  height: 115px; left: 22%; top: 65px; }
+    .gc3 { width: 100px; height: 138px; left: 37%; top: 25px; }
+    .gc4 { width: 95px;  height: 130px; left: 56%; top: 15px; }
+    .gc5 { width: 90px;  height: 138px; left: 73%; top: 8px;  }
 
-    .gc2 {
-        width: 95px;
-        height: 130px;
-        left: 23%;
-        top: 80px;
-    }
-
-    .gc3 {
-        width: 118px;
-        height: 160px;
-        left: 37%;
-        top: 35px;
-    }
-
-    .gc4 {
-        width: 110px;
-        height: 148px;
-        left: 56%;
-        top: 22px;
-    }
-
-    .gc5 {
-        width: 108px;
-        height: 160px;
-        left: 72%;
-        top: 12px;
+    .gallery-dots {
+        margin-top: 30px;
     }
 
 
-    /* ========================== Services ========================== */
+    /* ===== SERVICES ===== */
     .services {
-        padding: 80px 10%;
-        background: #04173c;
-        color: #fff;
-        text-align: center;
-        display: block; /* grid එපා */
+        display: block !important;
+        padding: 50px 20px;
     }
 
     .services h2 {
-        font-size: 30px;
-        color: #71c5fa;
-        margin-bottom: 40px;
+        font-size: 22px;
+        margin-bottom: 30px;
     }
 
     .services-card-container {
-        display: grid;
+        display: grid !important;
         grid-template-columns: repeat(2, 1fr);
-        gap: 20px;
-        max-width: 700px;
+        gap: 15px;
+        width: 100%;
         margin: 0 auto;
     }
 
     .service-card {
-        background: #1e293b;
-        padding: 30px 20px;
-        border-radius: 15px;
-        transition: 0.4s ease;
-        position: relative;
-        overflow: hidden;
-        cursor: pointer;
         width: 100%;
-    }
-
-    .service-card:hover {
-        transform: translateY(-10px);
-        box-shadow: 0 10px 25px rgba(0, 191, 255, 0.3);
-    }
-
-    .service-card::before {
-        content: "";
-        position: absolute;
-        width: 0%;
-        height: 4px;
-        top: 0;
-        left: 0;
-        background: deepskyblue;
-        transition: 0.4s ease;
-    }
-
-    .service-card:hover::before {
-        width: 100%;
+        padding: 20px 12px;
     }
 
     .service-card h3 {
-        font-size: 1.2rem;
-        margin-bottom: 15px;
-        color: deepskyblue;
+        font-size: 1rem;
     }
 
     .service-card p {
-        font-size: 0.9rem;
-        line-height: 1.6;
-        color: #cbd5e1;
-    }
-
-    /* Mobile */
-    @media (max-width: 768px) {
-        .services {
-            padding: 60px 5%;
-        }
-
-        .services-card-container {
-            grid-template-columns: repeat(2, 1fr);
-            gap: 15px;
-            max-width: 100%;
-        }
+        font-size: 0.8rem;
     }
 
 
+    /* ===== CONTACT ===== */
+    .contact {
+        padding: 40px 20px;
+        margin-bottom: 0;
+    }
+
+    .contact h2 {
+        font-size: 1.8rem;
+    }
+
+    .contact-box {
+        padding: 20px;
+    }
+
+    .input-group {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .input-group label {
+        width: 100%;
+        margin-bottom: 5px;
+        color: white;
+    }
+
+    .input-group input,
+    .input-group textarea {
+        width: 100%;
+    }
+
+    .contact > button {
+        width: 100%;
+        padding: 12px;
+    }
 }
