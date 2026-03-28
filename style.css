@@ -27,7 +27,7 @@ main, section {
 
 
 * {//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-    box-sizing: border-box;
+box-sizing: border-box;
 }
 
 html, body {
@@ -84,15 +84,15 @@ header > section {
 
 /* nav */
 header > nav{
-   margin-right: 60px;
+    margin-right: 60px;
 }
 header > nav > a {
     text-decoration: none;
-        font-family: "Arial Narrow";
-        justify-content:space-evenly;
-        margin-left:20px;
-        color:white;
-        font-size:20px;;
+    font-family: "Arial Narrow";
+    justify-content:space-evenly;
+    margin-left:20px;
+    color:white;
+    font-size:20px;;
 
 }
 
@@ -418,7 +418,7 @@ main > section {
 
 
 /*
- background colors */
+background colors */
 .skill-icon.java       { background: #f5f5f5; }
 .skill-icon.html       { background: #fff3e0; }
 .skill-icon.css        { background: #e3f2fd; }
@@ -879,14 +879,14 @@ main > section {
 
 .services {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
     gap: 25px;
 }
 
 
 .service-card {
     background: #1e293b;
-    padding: 30px 20px;
+    padding: 40px 50px;
     border-radius: 15px;
     transition: 0.4s ease;
     position: relative;
@@ -996,7 +996,7 @@ textarea {
     padding: 12px 30px;
     margin:auto;
 }
-    .contact> button:hover {
+.contact> button:hover {
     background: deepskyblue;
 }
 
@@ -1014,8 +1014,6 @@ textarea {
 /* ====================================================================== RESPONSIVE ========================================================================================== */
 
 @media (max-width: 768px) {
-
-
 
 
     header {
@@ -1052,9 +1050,11 @@ textarea {
     .hamburger.active span:nth-child(1) {
         transform: rotate(45deg) translate(5px, 6px);
     }
+
     .hamburger.active span:nth-child(2) {
         opacity: 0;
     }
+
     .hamburger.active span:nth-child(3) {
         transform: rotate(-45deg) translate(5px, -6px);
     }
@@ -1077,7 +1077,7 @@ textarea {
 
     nav a {
         padding: 14px 24px;
-        border-bottom: 1px solid rgba(255,255,255,0.1);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
         border-radius: 0;
         font-size: 16px;
     }
@@ -1087,12 +1087,7 @@ textarea {
     }
 
 
-
-
-
-/*======================                      home              ==================*/
-
-
+    /*======================                      home              ==================*/
     main > section {
         flex-direction: column;
         text-align: center;
@@ -1121,7 +1116,7 @@ textarea {
     .mian_name {
         font-size: 32px;
         margin-top: 10px;
-        margin:auto;
+        margin: auto;
 
 
         border-right: 2px solid white;
@@ -1135,9 +1130,16 @@ textarea {
 
     /* FIXED typing width */
     @keyframes typing {
-        0% { width: 0 }
-        50% { width: 260px } /* IMPORTANT */
-        100% { width: 0 }
+        0% {
+            width: 0
+        }
+        50% {
+            width: 260px
+        }
+        /* IMPORTANT */
+        100% {
+            width: 0
+        }
     }
 
     /* SLIDER TEXT */
@@ -1163,11 +1165,7 @@ textarea {
     }
 
 
-
-
-       /*==================================   about  ==============================================*/
-
-
+    /*==================================   about  ==============================================*/
     .about {
         font-size: 20px;
         flex-direction: column;
@@ -1177,6 +1175,7 @@ textarea {
     .about-text {
         font-size: 20px;
     }
+
     .about_picture {
         width: 250px;
         height: 250px;
@@ -1196,28 +1195,28 @@ textarea {
     }
 
 
-
     /*==================================   Skills  ==============================================*/
+    .skills_icons {
+        justify-content: center;
+    }
 
-        .skills_icons {
-            justify-content: center;
-        }
+    .skill-icon {
+        width: 75px;
+        height: 75px;
+        width: 50px;
+    / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / height: 50 px;
+    / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / /
+    }
 
-        .skill-icon {
-            width: 50px;////////////////////////////////////////////
-            height: 50px;//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-        }
-
-        .skill-icon img {
-            width: 25px;
-            height: 25px;
-        }
-
-
+    .skill-icon img {
+        width: 45px;
+        height: 45px;
+        width: 25px;
+        height: 25px;
+    }
 
 
     /*==================================   education  ==============================================*/
-
     .education {
         padding: 40px 20px;
     }
@@ -1246,7 +1245,6 @@ textarea {
     }
 
     /*==================================   Excersises  ==============================================*/
-
     .exercises {
         padding: 40px 20px;
     }
@@ -1260,9 +1258,7 @@ textarea {
     }
 
 
-
     /*==================================   Gallery  ==============================================*/
-
     .gallery {
         padding: 40px 20px;
     }
@@ -1271,36 +1267,67 @@ textarea {
         height: 280px;
     }
 
-    .gc1 { width: 120px; height: 165px; left: 2%;  top: 20px; }
-    .gc2 { width: 95px;  height: 130px; left: 23%; top: 80px; }
-    .gc3 { width: 118px; height: 160px; left: 37%; top: 35px; }
-    .gc4 { width: 110px; height: 148px; left: 56%; top: 22px; }
-    .gc5 { width: 108px; height: 160px; left: 72%; top: 12px; }
+    .gc1 {
+        width: 120px;
+        height: 165px;
+        left: 2%;
+        top: 20px;
+    }
+
+    .gc2 {
+        width: 95px;
+        height: 130px;
+        left: 23%;
+        top: 80px;
+    }
+
+    .gc3 {
+        width: 118px;
+        height: 160px;
+        left: 37%;
+        top: 35px;
+    }
+
+    .gc4 {
+        width: 110px;
+        height: 148px;
+        left: 56%;
+        top: 22px;
+    }
+
+    .gc5 {
+        width: 108px;
+        height: 160px;
+        left: 72%;
+        top: 12px;
+    }
 
 
     /*==================================   Services  ==============================================*/
+    .services {
+        padding: 60px 5%;
+        /*.services {*/
+        /*    padding: 60px 5%;*/
+        /*}*/
 
-    /*.services {*/
-    /*    padding: 60px 5%;*/
-    /*}*/
 
+        /*.services h2 {*/
+        /*    font-size: 2rem;*/
+        /*}*/
 
-    /*.services h2 {*/
-    /*    font-size: 2rem;*/
-    /*}*/
-
-    /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / /
 
         /* FIX SECTION */
-        .services {
-            display: block;              /* stop grid issue */
-            flex-direction: column;
-            align-items: center;
-            padding: 60px 20px;
-            text-align: center;
-        }
+    . services {
+        display: block; /* stop grid issue */
+        flex-direction: column;
+        align-items: center;
+        padding: 60px 20px;
+        text-align: center;
+    }
 
         /* TITLE CENTER */
+
         .services h2 {
             width: 100%;
             text-align: center;
@@ -1308,6 +1335,7 @@ textarea {
         }
 
         /* GRID FIX */
+
         .service-card-container {
             display: grid;
             grid-template-columns: repeat(2, 1fr); /* 2 per row */
@@ -1318,140 +1346,136 @@ textarea {
         }
 
         /* CARD FIX */
+
         .service-card {
             width: 100%;
 
         }
 
 
-
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* ====================================================================== RESPONSIVE 2 ========================================================================================== */
-
-@media (min-width: 400px) {
-
-    /* HEADER */
-    header {
-        padding: 8px 12px;
     }
 
-    header h4 {
-        font-size: 14px;
+
+    /* ====================================================================== RESPONSIVE 2 ========================================================================================== */
+    @media (max-width: 400px) {
+
+        /* HEADER */
+        header {
+            padding: 8px 12px;
+        }
+
+        header h4 {
+            font-size: 14px;
+        }
+
+        /* HERO SECTION */
+        .main-photo {
+            width: 180px;
+            height: 180px;
+            margin-top: 80px;
+        }
+
+        .hii {
+            font-size: 20px;
+        }
+
+        .mian_name {
+            font-size: 26px;
+        }
+
+        @keyframes typing {
+            0% {
+                width: 0
+            }
+            50% {
+                width: 200px
+            }
+            /* smaller width */
+            100% {
+                width: 0
+            }
+        }
+
+        .text-slider {
+            font-size: 16px;
+            height: 30px;
+        }
+
+        .main_p {
+            font-size: 14px;
+            padding: 0 5px;
+
+        }
+
+        /* ABOUT */
+        .about-text {
+            font-size: 16px;
+        }
+
+        .about_picture {
+            width: 200px;
+            height: 200px;
+
+        }
+
+        .cv_button {
+            width: 60%;
+            font-size: 12px;
+        }
+
+        /* SKILLS */
+        .skill-icon {
+            width: 65px;
+            height: 65px;
+            align-items: center;
+        }
+
+        .skill-icon img {
+            width: 35px;
+            height: 35px;
+        }
+
+        /* PROJECTS / EXERCISES */
+        .project-info h4,
+        .exercise-info h4 {
+            font-size: 14px;
+            margin: auto;
+        }
+
+        .project-info p,
+        .exercise-info p {
+            font-size: 12px;
+        }
+
+        /* GALLERY FIX */
+        .gallery-stage {
+            height: 220px;
+            margin: auto;
+        }
+
+        .gc1, .gc2, .gc3, .gc4, .gc5 {
+            transform: none !important;
+        }
+
+        .services h2 {
+            font-size: 2rem;
+            /* CONTACT */
+
+            .contact-box {
+                padding: 20px;
+                margin: auto;
+            }
+
+            .input-group {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .input-group label {
+                width: 100%;
+                margin-bottom: 5px;
+            }
+
+        }
     }
-
-    /* HERO SECTION */
-    .main-photo {
-        width: 180px;
-        height: 180px;
-        margin-top: 80px;
-    }
-
-    .hii {
-        font-size: 20px;
-    }
-
-    .mian_name {
-        font-size: 26px;
-    }
-
-    @keyframes typing {
-        0% { width: 0 }
-        50% { width: 200px } /* smaller width */
-        100% { width: 0 }
-    }
-
-    .text-slider {
-        font-size: 16px;
-        height: 30px;
-    }
-
-    .main_p {
-        font-size: 14px;
-        padding: 0 5px;
-
-    }
-
-    /* ABOUT */
-    .about-text {
-        font-size: 16px;
-    }
-
-    .about_picture {
-        width: 200px;
-        height: 200px;
-
-    }
-
-    .cv_button {
-        width: 60%;
-        font-size: 12px;
-    }
-
-    /* SKILLS */
-    .skill-icon {
-        width: 65px;
-        height: 65px;
-        align-items: center;
-    }
-
-    .skill-icon img {
-        width: 35px;
-        height: 35px;
-    }
-
-    /* PROJECTS / EXERCISES */
-    .project-info h4,
-    .exercise-info h4 {
-        font-size: 14px;
-        margin:auto;
-    }
-
-    .project-info p,
-    .exercise-info p {
-        font-size: 12px;
-    }
-
-    /* GALLERY FIX */
-    .gallery-stage {
-        height: 220px;
-        margin:auto;
-    }
-
-    .gc1, .gc2, .gc3, .gc4, .gc5 {
-        transform: none !important;
-    }
-
-    /* CONTACT */
-    .contact-box {
-        padding: 20px;
-        margin:auto;
-    }
-
-    .input-group {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .input-group label {
-        width: 100%;
-        margin-bottom: 5px;
-    }
-
 }
