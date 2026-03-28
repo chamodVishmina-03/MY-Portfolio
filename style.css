@@ -175,7 +175,7 @@ main > section {
     filter: blur(20px);
     rotate: 180deg;
 }
-.main-photo img:hover {
+.main-photo img{
     animation: float 1s ease-in-out infinite alternate;
 }
 
