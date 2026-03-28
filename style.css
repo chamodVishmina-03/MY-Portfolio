@@ -197,20 +197,20 @@ main > section {
 
 
 .mian_name {
-    font-size: 70px;
+    font-size: 68px;
     color: #efe7ff;
     border-right: 3px solid #000000;
     white-space: nowrap;
     overflow: hidden;
     width: 0;
 
-    animation: typing 4s steps(20) infinite alternate,
+    animation: typing 4s steps(17) infinite alternate,
     blink 0s infinite;
 }
 
 @keyframes typing {
     0% { width: 0 }
-    50% { width: 600px }
+    50% { width: 570px }
     100% { width: 0 }
 }
 
@@ -1099,6 +1099,8 @@ textarea {
     .mian_name {
         font-size: 32px;
         margin-top: 10px;
+        margin:auto;
+
 
         border-right: 2px solid white;
         white-space: nowrap;
