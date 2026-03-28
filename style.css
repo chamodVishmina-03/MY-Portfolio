@@ -19,11 +19,7 @@ main, section {
     position: relative;
     z-index: 1;
 }
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
+
 /* ================= HEADER ================= */
 
 header {
@@ -174,7 +170,7 @@ main > section {
     filter: blur(20px);
     rotate: 180deg;
 }
-.main-photo img:hover {
+.main-photo img {
     animation: float 1s ease-in-out infinite alternate;
 }
 
@@ -209,13 +205,13 @@ main > section {
     overflow: hidden;
     width: 0;
 
-    animation: typing 4s steps(20) infinite alternate,
+    animation: typing 4s steps(16) infinite alternate,
     blink 0s infinite;
 }
 
 @keyframes typing {
     0% { width: 0 }
-    50% { width: 600px }
+    50% { width: 500px }
     100% { width: 0 }
 }
 
@@ -1099,12 +1095,11 @@ textarea {
     /* NAME */
     .mian_name {
         font-size: 32px;
-        margin-top: 10px;
-
         border-right: 2px solid white;
         white-space: nowrap;
         overflow: hidden;
         width: 0;
+        margin:auto;
 
         animation: typing 4s steps(20) infinite alternate,
         blink 1s infinite;
