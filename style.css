@@ -305,9 +305,9 @@ main > section {
 }
 
 /* Paragraph */
-.about-text {
+.about-text >p {
     max-width: 850px;
-    font-size: 25px;
+    font-size: 20px;
     color: #C1F1FF;
     text-align: center;
     margin-top: 60px;
