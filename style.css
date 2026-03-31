@@ -35,9 +35,11 @@ header {
     top: 0;
     z-index: 1000;
 
-   background: radial-gradient(circle at left, #1c3a7a, #055581 80%) ;
+    background:rgba(0, 0, 0, 0.26);
 
-    box-shadow: 0px 10px 10px #9292ba;
+   /*background: radial-gradient(circle at left, #1c3a7a, #055581 80%) ;*/
+
+   /* box-shadow: 0px 10px 10px #9292ba;*/
 }
 
 /* logo section */
