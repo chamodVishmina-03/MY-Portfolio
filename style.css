@@ -259,7 +259,7 @@ main > section {
     50%, 100% { opacity: 0; transform: translateY(-20px); }
 }
 .main_p {
-    font-size: 20px;
+    font-size: 28px;
     color: rgba(208, 217, 230, 0.98);
 }
 
