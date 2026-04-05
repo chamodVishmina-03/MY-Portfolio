@@ -993,7 +993,38 @@ textarea {
 
 
 
+/* Container */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    margin-top: -250px;
+    padding: 40px;
 
+}
+
+
+/* links */
+.social-icons a {
+    text-decoration: none;
+}
+
+  /* icons */
+.social-icons i {
+    font-size: 60px;
+    color: #ffffff;
+    transition: all 0.3s ease;
+}
+
+
+
+
+/*  effect */
+.social-icons i:hover {
+    transform: scale(1.2);
+    color: #00d9ff;
+}
 
 
 
