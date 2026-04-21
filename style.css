@@ -325,10 +325,13 @@ main > section {
     border: none;
     color: white;
     cursor: pointer;
+
     margin-top: 20px;
-    margin-right: 0;
-    border-radius: 6px;
-    width: 30%;
+    margin-right: 40px;
+
+    width: 200px;
+    height: 40px;
+
 }
 
 #cv_button:hover {
