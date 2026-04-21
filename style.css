@@ -327,7 +327,7 @@ main > section {
     cursor: pointer;
 
     margin-top: 20px;
-    margin-right: 40px;
+    align-items: center;
 
     width: 200px;
     height: 40px;
