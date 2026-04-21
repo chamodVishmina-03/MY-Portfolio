@@ -318,7 +318,7 @@ main > section {
 }
 
 /* Button*/
-.cv_button {
+#cv_button {
     padding: 10px 20px;
     font-size: 18px;
     background-color: #f80202;
@@ -331,7 +331,7 @@ main > section {
     width: 30%;
 }
 
-.cv_button:hover {
+#cv_button:hover {
     background-color: #05e2ff;
 }
 
