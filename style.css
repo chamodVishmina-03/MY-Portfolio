@@ -165,7 +165,7 @@ main > section {
     inset: -15px;
 
     border-radius: 50%;
-    background: linear-gradient(45deg, #00f0ff, #b626fb);
+    background: linear-gradient(45deg, #00f0ff, #a209e1);
 
     filter: blur(60px);
     z-index: 0;
