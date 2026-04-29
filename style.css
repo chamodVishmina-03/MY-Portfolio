@@ -229,7 +229,7 @@ main > section {
 .main_1,
 .main_2 {
     font-size: 35px;
-    color: #df0cff;
+    color: #e70cff;
 }
 
 /*animation=============================*/
@@ -238,6 +238,7 @@ main > section {
     height: 60px; /* adjust for font-size */
     font-size: 35px;
     font-family: "Arial Black";
+    ;
     color:#EA0BE6;
     overflow: hidden;
 }
