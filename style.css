@@ -82,7 +82,7 @@ header > nav > a {
 
 header > nav > a:hover {
     background: #2A7B9B;
-    background: linear-gradient(90deg, rgb(81, 178, 218) 0%, rgb(43, 226, 205) 50%, rgb(56, 205, 205) 100%);
+    background: linear-gradient(90deg, rgba(42, 123, 155, 1) 0%, rgb(43, 226, 205) 50%, rgb(42, 255, 255) 100%);
     color: #faf7f7;
     padding: 5px 10px;
     border-radius: 5px;
@@ -97,7 +97,7 @@ header h4 {
 
 body {
     margin: 0;
-    background: radial-gradient(circle at left, #0a2a3a, #02201f 70%);
+    background: radial-gradient(circle at left, #0a2a3a, #03011b 70%);
 }
 
 /* glow effect */
@@ -165,7 +165,7 @@ main > section {
     inset: -15px;
 
     border-radius: 50%;
-    background: linear-gradient(45deg, #00f0ff, #a209e1);
+    background: linear-gradient(45deg, #00f0ff, #b626fb);
 
     filter: blur(60px);
     z-index: 0;
@@ -229,7 +229,7 @@ main > section {
 .main_1,
 .main_2 {
     font-size: 35px;
-    color: #e70cff;
+    color: #df0cff;
 }
 
 /*animation=============================*/
@@ -238,7 +238,6 @@ main > section {
     height: 60px; /* adjust for font-size */
     font-size: 35px;
     font-family: "Arial Black";
-    ;
     color:#EA0BE6;
     overflow: hidden;
 }
