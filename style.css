@@ -986,9 +986,12 @@ textarea {
     height: 150px;
 }
 
-.contact> button {
+.contact > #submit_btn {
+    width: 100%;
+
     padding: 12px 30px;
     margin:auto;
+
 }
 .contact> button:hover {
     background: deepskyblue;
