@@ -35,7 +35,7 @@ header {
     top: 0;
     z-index: 1000;
 
-    background:rgba(0, 0, 0, 0.26);
+    background: rgba(78, 75, 75, 0.26);
 
    /*background: radial-gradient(circle at left, #1c3a7a, #055581 80%) ;*/
 
@@ -100,7 +100,7 @@ body {
     background: radial-gradient(circle at left, #0a2a3a, #03011b 70%);
 }
 
-/* glow effect */
+/*  effect */
 body::before {
     content: "";
     position: fixed;
