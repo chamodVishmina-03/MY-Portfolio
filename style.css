@@ -167,7 +167,7 @@ main > section {
     border-radius: 50%;
     background: linear-gradient(45deg, #00f0ff, #b626fb);
 
-    filter: blur(60px);
+    filter: blur(20px);
     z-index: 0;
 }
 .main-photo:hover::before {
