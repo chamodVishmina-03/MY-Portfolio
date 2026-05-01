@@ -15,6 +15,9 @@
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
 
 
 </head>
@@ -80,12 +83,12 @@
 
       <section class="about" id="about">
           <h3 class="about_section_topic">About me </h3>
-          <div class="about-photo">
-           <img src="assests/about_picture.jpeg" alt="about_picture" class="about_picture">
+          <div class="about-photo " >
+           <img src="assests/about_picture.jpeg" alt="about_picture" class="about_picture ">
 
           </div>
 
-          <div class="about-text">
+          <div class="about-text  ">
           <p>
               I am G.Chamod Vishmina Kularathna. I lived in galle, Srilanka. I'm currently studying in Institute Of Software Engineering.
               I am a Software Engineering student with a strong interest in web development and Java-based applications.
@@ -156,8 +159,8 @@
 
      <section class="education" id="education">
          <h3 class="education_topic">Education</h3>
-         <div class="edu-timeline">
-             <div class="edu-item">
+         <div class="edu-timeline" >
+             <div class="edu-item"   data-aos="flip-up"  >
                  <p>I studied at G/P.De.S.Kularathna College in Ambalangoda</p>
              </div>
              <div class="edu-arrow">
@@ -505,6 +508,7 @@
 
 
 
+
     <section class="social-icons">
 
 
@@ -543,7 +547,9 @@
 
 
     </section>
-    <script src="script.js"></script>
+
+
+
 
 
     <section class="footer">
@@ -564,6 +570,14 @@
 
     </section>
 
+
+
+<script src="script.js"></script>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
 
 
 </body>

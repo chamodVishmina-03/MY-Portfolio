@@ -1,4 +1,7 @@
+
+
 // ========== BUBBLE ANIMATION ==========
+
 const canvas = document.getElementById('bubble-canvas');
 const ctx = canvas.getContext('2d');
 
