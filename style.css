@@ -1041,7 +1041,13 @@ textarea {
 
 
 
+.footer{
+    padding: 60px 10%;
+    background: #04173c;
+    color: #fff;
+    text-align: center;
 
+}
 
 
 
