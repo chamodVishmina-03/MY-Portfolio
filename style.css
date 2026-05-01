@@ -1041,6 +1041,36 @@ textarea {
 
 
 
+.footer {
+    display: flex;
+    align-items: center; /* vertical ව මැදට ගන්න */
+    justify-content: flex-start; /* වම් පැත්තට බද්ධ කරන්න */
+    padding: 40px;
+    background-color: #001529; /* ඔයාගේ theme එකට ගැලපෙන වර්ණය */
+    gap: 30px; /* QR එක සහ Text එක අතර පරතරය */
+}
+
+.footer-qr img {
+    width: 150px; /* QR එකේ ප්‍රමාණය අවශ්‍ය පරිදි වෙනස් කරන්න */
+    height: auto;
+    border-radius: 10px;
+}
+
+.text_footer {
+    color: white;
+    text-align: left; /* Text එක වම් පැත්තට align කරන්න */
+}
+
+.text_footer h3 {
+    margin: 10px 0;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+
+
+
+
 /* ====================================================================== RESPONSIVE ========================================================================================== */
 
 @media (max-width: 768px) {
