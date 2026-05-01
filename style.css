@@ -1005,9 +1005,10 @@ textarea {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 60px;
-    margin-top: -250px;
-    padding: 40px;
+    gap: 80px;
+    margin-top: -170px;
+    padding: 10px;
+    flex-wrap: wrap;
 
 }
 
