@@ -1015,13 +1015,16 @@ textarea {
 /* links */
 .social-icons a {
     text-decoration: none;
+    justify-content: center;
+
 }
 
 /* icons */
 .social-icons i {
-    font-size: 60px;
+    font-size: 40px;
     color: #ffffff;
     transition: all 0.3s ease;
+    cursor: pointer;
 }
 
 
