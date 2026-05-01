@@ -1013,14 +1013,14 @@ textarea {
 }
 
 
-/* links */
+/* ========links====== */
 .social-icons a {
     text-decoration: none;
     justify-content: center;
 
 }
 
-/* icons */
+/* ===icons =======*/
 .social-icons i {
     font-size: 40px;
     color: #ffffff;
@@ -1040,7 +1040,7 @@ textarea {
 
 
 
-
+/* ===== Footer            ===== */
 .footer {
     display: flex;
     align-items: center;
@@ -1459,6 +1459,7 @@ textarea {
     }
 
 
+    /* ===== icon ===== */
     .social-icons {
         gap: 20px;
         flex-wrap: wrap;
@@ -1476,7 +1477,7 @@ textarea {
 
 
 
-
+    /* ===== Footer ===== */
 
         .footer {
             flex-direction: column !important;
