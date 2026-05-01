@@ -1450,7 +1450,7 @@ textarea {
 
     .input-group input,
     .input-group textarea {
-        width: 100%;
+        width: 90%;
     }
 
     .contact > button {
@@ -1473,4 +1473,42 @@ textarea {
     .social-icons i {
         font-size: 30px;
     }
+
+
+
+
+
+        .footer {
+            flex-direction: column !important;
+            justify-content: center !important;
+            align-items: center !important;
+            text-align: center !important;
+            gap: 20px !important;
+            padding: 40px 20px !important;
+        }
+
+
+        .footer-qr img {
+            position: static !important;
+            margin: 0 auto !important;
+            width: 130px !important;
+        }
+
+
+        .text_footer {
+            width: 100% !important;
+            text-align: center !important;
+        }
+
+        .text_footer h3 {
+            font-size: 1rem !important;
+            margin: 5px 0 !important;
+        }
+
+        .social-icons {
+            gap: 30px !important;
+            margin-top: 20px !important;
+            justify-content: center !important;
+        }
+
 }
